@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h2>Student Information System</h2>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>group</th>
+            <th>action</th>
+        </tr> 
+        {% for record in records%}
+        <tr>
+            <td>{{ record.name }}</td>
+            <td>{{ record.age }}</td>
+            <td>{{ record.group }}</td>
+            <td>
+                <a href="/delete/{{ record.id }}">Delete</a>
+                <a href="/update/{{ record.id }}">Update</a>
+            </td> 
+        </tr> 
+        {% endfor %}    
+    </table> 
+    <br>
+    <br>
+    <form action="/" method="POST">
+        <label>Enter name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label>Enter Age</label>
+        <input type="text" name="age" id="age">
+        <br><br>
+        <label>Enter Group</label>
+        <input type="text" name="group" id="group">
+        <br><br>
+        <input type="submit" value="Add record">
+    </form>   
+</div>    
+
+{% endblock %}

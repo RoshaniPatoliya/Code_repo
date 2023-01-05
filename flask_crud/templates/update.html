@@ -1,0 +1,15 @@
+{% block content %}
+<div class="content">
+    <h2>Update Student Information</h2>
+    
+    <div class="form">
+    <form action="/update/{{ record.id }}" method="POST">
+        <label>Update name</label>
+        <input type="text" name="name" id="name" value={{ record.name }}>
+        <br><br>
+        <input type="submit" value="Update record">
+    </form> 
+    </div>  
+</div>    
+
+{% endblock %}
