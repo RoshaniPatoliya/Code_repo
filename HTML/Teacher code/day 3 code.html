@@ -1,0 +1,168 @@
+CSS_Intro.html
+---------------------------
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="CSS_Intro.css">-->
+        <style>
+            /*p {
+                color:red;
+                padding:6px;
+                border:solid;
+                border-radius:34px;
+            }
+            h1 {
+                font-size:24px;
+            }
+            #a {
+                font-size:xx-large;
+                color:green;
+            }
+            .b {
+                border:solid;
+            }*/
+            span.x{
+                display:inline;
+                width:100px;
+                height: 100px;
+                padding:5px;
+                border: 1px solid blue;
+                background-color: aquamarine;
+            }
+            span.y{
+                display:inline-block;
+                width:400px;
+                height: 200px;
+                padding:5px;
+                border: 1px solid blue;
+                background-color: aquamarine;
+            }
+            span.z{
+                display:block;
+                width:400px;
+                height: 100px;
+                padding:5px;
+                border: 1px solid blue;
+                background-color: aquamarine;
+            }
+            ul{
+                list-style-type: none;
+                background-color: grey;
+            }
+            li {
+                display:inline;
+                margin:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+        <h1 class="b">Hello h1</h1>
+        <h1 id="a">Hello</h1>
+        <h1 style="">World</h1>
+        <p>I am paragraph</p>
+        <span class="b">I am span</span>
+        <h3 class="b">I am h3</h3>
+        <p>HI <span class="x">I am span 1</span></p>
+        <p>Hello how are you doing<span class="y">I am span 2 inline block</span></p>
+        <p>Hej are you there<span class="z">I am span 3 block</span></p>
+    </body>
+</html>
+CSS_Intro.css
+-----------------------------------
+p {
+    color:red;
+    padding:6px;
+    border:solid;
+    border-radius:34px;
+}
+h1 {
+    font-size:24px;
+}
+#a {
+    font-size:xx-large;
+    color:green;
+}
+.b {
+    border:dotted;
+}
+---------------------------------------------------
+layout.html
+-----------------------
+<html>
+    <head>
+        <style>
+            body{
+                margin:0;
+            }
+            .header{
+                padding:30px;
+                text-align:center;
+                background-color: #f1f1f1;
+            }
+            .nav {
+                overflow:hidden;
+                background-color: grey;
+            }
+            .nav a{
+                float:left;
+                display:block;
+                color:white;
+                text-align:center;
+                padding:3px;
+                font-size: 20px;
+            }
+            .column1 
+            { 
+                float:left;
+                width: 20%;
+            }
+            .column2 
+            { 
+                float:left;
+                width: 60%;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width:600px)
+            {
+                .column{
+                    width:100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Header</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Menu</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Gallery</a>
+            <a href="#">Information</a>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <h2>left</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis suscipit quo velit nemo doloremque non modi veniam, reiciendis dignissimos possimus facere ducimus, harum odit debitis molestiae voluptatem vero ullam!</p>
+            </div>
+            <div class="column2">
+                <h2>middle</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis suscipit quo velit nemo doloremque non modi veniam, reiciendis dignissimos possimus facere ducimus, harum odit debitis molestiae voluptatem vero ullam!</p>
+            </div>
+            <div class="column1">
+                <h2>right</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis suscipit quo velit nemo doloremque non modi veniam, reiciendis dignissimos possimus facere ducimus, harum odit debitis molestiae voluptatem vero ullam!</p>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.bold{
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.result{
+    width: 500px;
+    padding-right: 5px;
+}
+
+td{
+    padding-left: 5px;
+    
+}
+
+table, th, td, tr{
+    border: 1px solid black;
+    
+}
