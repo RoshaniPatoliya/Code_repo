@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <h1>Hi and welcome</h1>
+    <h2>Here is your access records:</h2>
+  <!--  <img src="{%static "images/django.png" %}" alt="django image"> -->
+    <div>
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>Site name</th>
+                <th>Date Accessed</th>
+            </thead>
+            {% for acc in access_records %}
+            <tr>
+                <td>{{ acc.name }}</td>
+                <td>{{ acc.date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No access Record Found!</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
