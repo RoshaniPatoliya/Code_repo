@@ -1,0 +1,8 @@
+apps.py- use to configure app(configration file)
+models.py- to configure model class and pull out the data from database(store and retrieve data)
+admin.py- admin interface for app
+migration- generating database table
+views.py - request handler(take the request and return the reponse, request handler)
+
+python manage.py sqlmigrate first_app 0001(see the sql query)
+python manage.py dbshell > .tables(to see list of tables)
