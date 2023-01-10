@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Jquery_Demo2.js"></script>
+        <style>
+            .ancestors *{
+                border :solid 2px red;
+                padding:5px;
+                margin: 4px;
+            }
+            button{
+                color:brown;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="">this is p1</p>
+        <p>this is p2</p>
+        <button id="btn1" style="color:blueviolet">add text</button><br><br><br>
+        <div class="ancestors">
+            <div class="c1">
+                <ul class="grandchild1">
+                    <li class="greatgrandchild1">
+                       coffee 
+                    </li>
+                    <li class="greatgrandchild2">
+                      juice  
+                    </li>
+                </ul>
+            </div>
+            <div class="c2">
+                <span class="grandchild2">
+                    I am span
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
+
